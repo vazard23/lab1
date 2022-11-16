@@ -4,6 +4,7 @@ class Cat : Animal() {
 
     private val color = "Grey"
 
+
     override fun sound(): String {
         return sound
     }
@@ -12,7 +13,10 @@ class Cat : Animal() {
         get() = "Meow"
 
     override fun doSomething() {
-        println("Sleepy cat dreams about Fish")
+        for (i in 1..5) {
+            println("Sleepy cat dreaming about Fish")
+        }
+        println("Cat wants to sleep more, but also he wants to eat")
     }
 
     fun rest(){
